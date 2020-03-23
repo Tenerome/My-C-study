@@ -1,0 +1,29 @@
+#include<windows.h>
+#include<stdlib.h>
+int main()
+{
+
+int i,b;
+long a;
+system("color 70");
+printf("输入预计关机的时间(分钟):");
+scanf("%d",&a);
+b=a*60;
+for(i=5;i>=0;i--)
+{
+	Sleep(1000);
+	printf(".");
+}
+printf("已完成设置。\n");
+Sleep(2000);
+printf("距离关机还有:\n");
+for(i=b;i>=0;i--)
+{
+	Sleep(1000);
+	printf("%ds",i);
+	printf("\b\b\b\b\b\b\b\b\b\b");
+}
+a=a*60000;
+Sleep(a);
+system("shutdown -s -t 0");
+}
