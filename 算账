@@ -1,0 +1,21 @@
+#include<stdio.h>
+#include<stdlib.h>
+#include<windows.h>
+int main()
+{
+int i;
+float a,b;
+system("color 70");
+for(i=0;i<1;i--)
+{
+printf("请输入重量:       kg\b\b\b\b\b\b\b\b\b"); 
+scanf("%f",&a); 
+Sleep(1000);
+printf("请输入价格:       元/kg\b\b\b\b\b\b\b\b\b\b\b");
+scanf("%f",&b);
+Sleep(1000);
+printf("总价格为:%f元\n",a*b);
+Sleep(1000);
+printf("\a");
+}
+}
