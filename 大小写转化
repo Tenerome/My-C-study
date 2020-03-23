@@ -1,0 +1,9 @@
+#include<stdio.h>
+int main()
+{
+int i;
+char a[20];
+gets(a);
+strupr(a);
+puts(a);
+}
